@@ -5,7 +5,6 @@ const user = express.Router()
 const User_ = require('../model/user')
 const Contact_ = require('../model/contact')
 
-
 // User API
 user.post('/signup',(req,res)=>{
     // destructring of data
@@ -46,15 +45,15 @@ user.post('/contact',(req,res)=>{
     const {name,email,message} = req.body;
     const newQuery = new Contact_({name,email,message})
     if(name == '' || email == '' || message == ''){
-       return res.status(400).send({message: 'Please fill all detail'})
+       return res.status(200).send({message: 'Please fill all detail'})
     }else{
         newQuery.save()
         return res.status(200).send({message: 'Query submited'})
     }
 })
 
-// login API
 
+// login API
 user.post('/login',(req,res)=>{
     const {username,password} = req.body;
     if(!username){
