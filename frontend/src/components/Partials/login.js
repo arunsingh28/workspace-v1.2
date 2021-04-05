@@ -10,7 +10,7 @@ import './login.css'
 const Login = () => {
 
     const history = useHistory('');
-
+    const URL_T = 'http://localhost:5001/user'
     const URL = 'https://workspace-api-2021.herokuapp.com/user'
     
     const [value,setValue] = useState({
@@ -39,11 +39,15 @@ const Login = () => {
             username : value.username,
             password : value.password
         }
-        console.log(value)
         const login = async()=>{
             try{
                 await axios.post(URL+'/login', newLogin)
-                .then(res => toast.info(res.data.message))
+                .then(res => {
+                    toast.info(res.data.message)
+                    if(res.data.message == 'Login sucessfull'){
+                        history.push('/d')
+                    }
+                })
             }
             catch(e){
                 toast.info(e +" something went wrong")

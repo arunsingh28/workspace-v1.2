@@ -9,7 +9,7 @@ import SignUpImage from '../Dashboard/Images/signup.jpeg'
 
 const Signup = () => {
     const history = useHistory()
-    
+    const URL_T = 'http://localhost:5001/user'
     const URL = 'https://workspace-api-2021.herokuapp.com/user'
 
     const [input,setInput] = useState({
@@ -46,6 +46,7 @@ const Signup = () => {
         try{
           await axios.post(URL+'/signup', newUser)
           .then(res => toast.dark(res.data.message))
+          // .then(()=> toast.dark('Account is Created'))
         }
         catch(e){
           toast.dark(e +" "+'Something went wrong')

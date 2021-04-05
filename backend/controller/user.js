@@ -56,13 +56,20 @@ user.post('/contact',(req,res)=>{
 // login API
 user.post('/login',(req,res)=>{
     const {username,password} = req.body;
-    if(!username){
-        return res.send({message: "Gandu Email to daal."})
-    }
-    if(!password){
-        return res.send({message: "maderchod password tera baap dalega."})
-    }
-    return res.send({message: "Password Galat hai Chutiye. Regard from Arun"})
+    User_.findOne({email:username},(err,user)=>{
+        if(!user){
+            return res.status(200).send({message:'Email is not registered'})
+        }else{
+            bcrypt.compare(password,user.password,(err,isMatch)=>{
+                if (err) throw err;
+                if(isMatch){
+                    return res.status(200).send({message:'Login sucessfull'})
+                }else{
+                    return res.status(200).send({message:'Password is incorrect'})
+                }
+            })
+        }
+    })
 })
 
 
