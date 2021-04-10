@@ -26,7 +26,8 @@ user.post('/signup',(req,res)=>{
         else{
             // encryption/salting of password
             bcrypt.genSalt(10,(err,salt)=>{
-                // hasing
+                if (err) throw err;
+                // saliting
                 bcrypt.hash(newUser.password,salt,(err,hash)=>{
                     if (err) throw err
                     newUser.password = hash
@@ -57,6 +58,7 @@ user.post('/contact',(req,res)=>{
 user.post('/login',(req,res)=>{
     const {username,password} = req.body;
     User_.findOne({email:username},(err,user)=>{
+        if(err) throw err;
         if(!user){
             return res.status(200).send({message:'Email is not registered'})
         }else{

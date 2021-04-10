@@ -7,6 +7,7 @@ import Login from './components/Partials/login';
 import Signup from './components/Partials/signup';
 import Lost from './components/Partials/Lost'
 
+
 const App = () => {
     return (
        <Router>
@@ -16,7 +17,7 @@ const App = () => {
                 <Route component={Login} path="/login" exact></Route>
                 <Route component={Signup} path="/signup" exact></Route>
                 <Route component={IndexDash}  path="/d" exact></Route>
-                <Route path="*" component={Lost} ></Route>
+                <Route path="*" component={Lost}></Route>
             </Switch>
        </Router>
     )

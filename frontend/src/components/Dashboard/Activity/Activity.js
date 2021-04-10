@@ -1,8 +1,6 @@
 import React from 'react'
 
 import SubActivity from './subActivity'
-import diamond from '../Images/diamond.svg'
-import error from '../Images/error.svg'
 import check from '../Images/check.svg'
 import x from '../Images/x.svg'
 const Activity = () => {

@@ -8,7 +8,6 @@ import SignUpImage from '../Dashboard/Images/signup.jpeg'
 
 
 const Signup = () => {
-    const history = useHistory()
     const URL_T = 'http://localhost:5001/user'
     const URL = 'https://workspace-api-2021.herokuapp.com/user'
 
