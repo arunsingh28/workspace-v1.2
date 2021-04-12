@@ -75,6 +75,7 @@ $gold: #fee3ae;
   overflow: scroll;
   
   .pic {
+    position: relative;
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     @include tablet() {
@@ -384,11 +385,19 @@ svg {
   animation-delay: .8s; 
 }
 
+.vertical{
+  position: absolute;
+}
+
+
+
+
 @keyframes float {
 	100% {
     transform: translateY(20px);
   }
 }
+
 @media (max-width: 450px) {
   svg {
     position: absolute;

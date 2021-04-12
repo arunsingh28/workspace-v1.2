@@ -1,6 +1,6 @@
 import React from 'react'
-import Icon from './Images/favico.png'
-import Science from './Images/science.svg'
+import Icon from '../Images/favico.png'
+import Science from '../Images/science.svg'
 import {Link} from 'react-router-dom'
 
 const Menu = () => {

@@ -15,6 +15,7 @@
 }
 
 .page .pic {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.3333%;
           flex: 0 0 33.3333%;
@@ -467,6 +468,10 @@
 #Polygon-5 {
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
+}
+
+.vertical {
+  position: absolute;
 }
 
 @-webkit-keyframes float {

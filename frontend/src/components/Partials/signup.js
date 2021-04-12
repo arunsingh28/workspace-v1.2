@@ -11,6 +11,12 @@ const Signup = () => {
     const URL_T = 'http://localhost:5001/user'
     const URL = 'https://workspace-api-2021.herokuapp.com/user'
 
+    const location = useHistory('')
+
+    useEffect(()=>{
+      document.title = 'Signup - Workspace'
+  },[])
+
     const [input,setInput] = useState({
       firstName: '',
       lastName: '',
@@ -18,9 +24,6 @@ const Signup = () => {
       email:'',
       confirmPassword:''
     })
-    useEffect(()=>{
-        document.title = 'Signup - Workspace'
-    },[])
 
     const handleChange=(e)=>{
       const {name,value} = e.target
@@ -43,15 +46,21 @@ const Signup = () => {
       }
       const sendData = async()=>{
         try{
-          await axios.post(URL+'/signup', newUser)
-          .then(res => toast.dark(res.data.message))
-          // .then(()=> toast.dark('Account is Created'))
+          await axios.post(URL_T+'/signup', newUser)
+          .then((res) =>{
+            if(res.data.message == 1){
+              toast.info('Account Created.')
+              location.push('/login')
+            }
+            toast.dark(res.data.message)
+          })
+          
         }
         catch(e){
           toast.dark(e +" "+'Something went wrong')
         }
       }
-      if(input.password != input.confirmPassword ){
+      if(input.password !== input.confirmPassword ){
         toast.dark('Password is not matching.')
       }
      else{
@@ -111,6 +120,9 @@ const Signup = () => {
 
   <div className="pic">
     <img src={SignUpImage} alt="image" />
+    <div className="vertical">
+      <span>W</span>
+    </div>
   </div>
 </div>
         

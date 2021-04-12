@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
 .App__B785s {
   font-family: 'Roboto', sans-serif !important;
   cursor: default !important;
@@ -147,6 +148,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .main__Dis .message__banner .banner__ {
@@ -213,6 +217,7 @@
 
 .main__Dis .message__banner .next__banner {
   margin-left: 13px;
+  margin-right: 24px;
   height: 150px;
   width: 6%;
   background: white;
@@ -562,5 +567,216 @@
 .pro__sh .videoList .wrapper button img {
   margin-left: 5px;
   height: 17px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: geometricPrecision;
+}
+
+.wrapper_Music {
+  margin: 60px 0px;
+  border-radius: 5px;
+  height: 500px;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, #602c82c7, #0abfbc59), url(https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+}
+
+.wrapper_Music .player_Music {
+  height: 400px;
+  width: 500px;
+  background: #ffffff40;
+  margin-left: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 #979cda5e;
+          box-shadow: 0 8px 32px 0 #979cda5e;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+}
+
+.wrapper_Music .player_Music .img_wrapper {
+  height: 70%;
+  width: 100%;
+}
+
+.wrapper_Music .player_Music .img_wrapper img {
+  height: 100%;
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.wrapper_Music .player_Music .header_Music {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.wrapper_Music .player_Music .header_Music .header_singer_rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper_Music .player_Music .header_Music .header_singer_rating h3 {
+  line-height: 30px;
+  font-family: 'RocknRoll One', sans-serif;
+  font-weight: 900;
+  color: #1d1d1d;
+}
+
+.wrapper_Music .player_Music .header_Music .header_singer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.wrapper_Music .player_Music .header_Music .header_singer_info p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.wrapper_Music .player_Music .header_Music .dot_Music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper_Music .player_Music .header_Music .dot_Music div {
+  height: 10px;
+  width: 10px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  margin-left: 4px;
+}
+
+.wrapper_Music .player_Music .list_Music {
+  margin-top: 20px;
+}
+
+.wrapper_Music .player_Music .list_Music ul {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.wrapper_Music .player_Music .list_Music ul li {
+  margin-top: 5px;
+  font-size: 12px;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 13px 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.wrapper_Music .player_Music .list_Music ul li:hover {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.wrapper_Music .player_Music .list_Music ul li span i {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper_Music .player_Music .list_Music ul li span:nth-child(2) {
+  max-width: 220px;
+  text-align: start !important;
+}
+
+.wrapper_Music .player_Music .list_Music ul li span:nth-child(3) {
+  margin-right: 5px;
+}
+
+.wrapper_Music .p_list {
+  height: 450px;
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 5px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 10px 0px;
+}
+
+.swiper-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

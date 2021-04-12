@@ -33,7 +33,7 @@ user.post('/signup',(req,res)=>{
                     newUser.password = hash
                     // save to db
                     newUser.save()
-                    return res.status(200).send({message: 'Account is created now you can login.'})
+                    return res.status(200).send({message: 1})
                 })
             })
         }
