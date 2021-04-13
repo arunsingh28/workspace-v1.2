@@ -8,6 +8,10 @@ import Signup from './components/Partials/signup';
 import Lost from './components/Partials/Lost'
 
 
+
+// footer link
+import About from './components/website/About'
+
 const App = () => {
     return (
        <Router>
@@ -17,6 +21,7 @@ const App = () => {
                 <Route component={Login} path="/login" exact></Route>
                 <Route component={Signup} path="/signup" exact></Route>
                 <Route component={IndexDash}  path="/d" exact></Route>
+                <Route component={About} path="/about" exact></Route>
                 <Route path="*" component={Lost}></Route>
             </Switch>
        </Router>

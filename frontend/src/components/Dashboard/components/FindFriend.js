@@ -13,7 +13,7 @@ const FindFriend = () => {
 
                 <div className="grid">
                     <div className="pic">
-                        <img src="https://instagram.fixc2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/158462247_431500151412756_80234418975196029_n.jpg?tp=1&_nc_ht=instagram.fixc2-1.fna.fbcdn.net&_nc_ohc=e36Jum9Rc-AAX_wban_&oh=43bdc6af60d4a8a0d3b7cbbb8b4a6db5&oe=607A2461"/>
+                        <img src="https://instagram.fixc2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/158462247_431500151412756_80234418975196029_n.jpg?tp=1&_nc_ht=instagram.fixc2-1.fna.fbcdn.net&_nc_ohc=e36Jum9Rc-AAX_wban_&oh=43bdc6af60d4a8a0d3b7cbbb8b4a6db5&oe=607A2461"  alt="image-ready"/>
                     </div>
                     <div className="name">
                        <p> Struggler <p className="p">Active now</p></p>
@@ -22,7 +22,7 @@ const FindFriend = () => {
 
                 <div className="grid">
                     <div className="pic">
-                        <img src="https://images.pexels.com/photos/3874511/pexels-photo-3874511.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                        <img src="https://images.pexels.com/photos/3874511/pexels-photo-3874511.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image-ready"/>
                     </div>
                     <div className="name">
                        <p> Mrs. Hiran <p className="p">Dead</p></p>
@@ -31,7 +31,7 @@ const FindFriend = () => {
 
                 <div className="grid">
                     <div className="pic">
-                        <img src="https://instagram.fixc2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/101646213_289018259154548_2756666252893093888_n.jpg?tp=1&_nc_ht=instagram.fixc2-1.fna.fbcdn.net&_nc_ohc=cgY0N_vAtT8AX8NQnoA&oh=d7fa0b9aec37c6c4296e0bea8401e06e&oe=6078048D"/>
+                        <img src="https://instagram.fixc2-1.fna.fbcdn.net/v/t51.2885-19/s320x320/101646213_289018259154548_2756666252893093888_n.jpg?tp=1&_nc_ht=instagram.fixc2-1.fna.fbcdn.net&_nc_ohc=cgY0N_vAtT8AX8NQnoA&oh=d7fa0b9aec37c6c4296e0bea8401e06e&oe=6078048D" alt="image-ready"/>
                     </div>
                     <div className="name">
                        <p> Solmon Bhai<p className="p">Active now</p></p>

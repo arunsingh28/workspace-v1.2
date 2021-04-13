@@ -1,5 +1,5 @@
 import React,{useRef,useEffect} from 'react'
-import {TweenMax, Power3, } from 'gsap'
+// import {TweenMax, Power3, } from 'gsap'
 import logoo from '../../public/image/plan.svg'
 import plan from '../../public/image/plan1.svg'
 import Mininfo from './MinInfo'

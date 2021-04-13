@@ -1103,4 +1103,81 @@ main h1 {
 .modal__Form form button {
   margin-top: 20px;
 }
+
+.about_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.a {
+  background: url("https://raw.githubusercontent.com/AhaanAJ/capstonepropage/main/capstonepropage/About%20us/a.jpeg") no-repeat left;
+  background-color: rgba(255, 255, 255, 0.801);
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner {
+  width: 55%;
+  float: right;
+  background-color: white;
+  padding: 55px;
+}
+
+.inner h1 {
+  margin-bottom: 13px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: darkgray;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .a {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .a {
+    padding: 0;
+  }
+  .inner {
+    padding: 60px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+// import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import Activity from './Activity/Activity'
 import Menu from './components/Menu'
@@ -20,29 +20,21 @@ const IndexDash = () => {
 
     return (
         <div className="App__B785s">
-
             <div className="menu_Dyv">
                 <Menu/>
             </div>
             <div className="dash__Bo">
-
-
-            <Router>
                 <Main/>
-                <h2 style={{fontWeight:'200',fontSize:'15px',padding:'20px 0px'}}>Other</h2>
+
+                {/* <div style={{'padding':'20px 0px'}}></div>
                 <Music/>
-                <Chat/>
-                <Music_M/>
-            </Router>
-
-
+                <Chat/> */}
 
             </div>
             <div className="Activity__">
                 <Activity/>
                 <FindFriend/>
             </div>
-
         </div>
     )
 }

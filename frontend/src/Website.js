@@ -8,7 +8,7 @@ import Info from './components/website/Info'
 import Footer from './components/website/Footer'
 import Contact from './components/website/Contact'
 import MoreInfo from './components/website/MoreInfo'
-
+import About from './components/website/About'
 
 import './public/style.css'
 // images
@@ -61,6 +61,9 @@ const Website = () => {
         {/* contact */}
         <Contact/>
         {/* footer */}
+
+
+
         <footer>
             <Footer/>
         </footer>

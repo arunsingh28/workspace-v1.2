@@ -3,14 +3,16 @@ import { Link,useHistory } from 'react-router-dom'
 import Cursor from '../website/Cursor'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
-
+import Navbar from '../website/Navbar'
 
 import logo from '../Dashboard/Images/favico.png'
 import './login.css'
 
-const Login = () => {
+const Login = (props) => {
+    console.log('Props from Login file',props)
 
     const history = useHistory('');
+
     const URL_T = 'http://localhost:5001/user'
     const URL = 'https://workspace-api-2021.herokuapp.com/user'
     
@@ -59,30 +61,31 @@ const Login = () => {
     }
 
     return (
+        <>
         <div className="login_body">
             <ToastContainer/>
             <section>
-            <div class="card">
-             <div class="content">
+            <div className="card">
+             <div className="content">
               <img src={logo} width="50" className="logo_ws"/>   
              <h2 className="h2">Get Started!</h2>
-         <div class="user">
+         <div className="user">
             <input type="email" placeholder="Username"
             name="username"
             onChange={handleChange}
             />
-            <i class="fas fa-user"></i>
+            <i className="fas fa-user"></i>
         </div>
-        <div class="pass">
+        <div className="pass">
             <input type="password" placeholder="Password" 
             name="password"
             onChange={handleChange}
             />
-            <i class="fas fa-lock"></i>
+            <i className="fas fa-lock"></i>
         </div>
-        <div class="else">
+        <div className="else">
             <input id="remember" type="checkbox" />
-            <label for="remember">Remember me</label>
+            <label htmlFor="remember">Remember me</label>
             <span>Forgot password?</span>
         </div>
             <button type="submit" className="button_login" onClick={submit}>Login</button>
@@ -93,6 +96,7 @@ const Login = () => {
 
         <Cursor/>
         </div>
+        </>
     )
 }
 

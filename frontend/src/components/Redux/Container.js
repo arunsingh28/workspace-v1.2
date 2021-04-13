@@ -6,8 +6,8 @@ const mapStateToProps = state =>({
 
 })
 
-const mapDispatchToProps = dispath =>({
-    addUserHandler: data => dispath(addUser(data))
+const mapDispatchToProps = dispatch =>({
+    addUserHandler: data => dispatch(addUser(data))
 })
 
 export default connect(mapDispatchToProps,mapStateToProps)(Login)

@@ -9,7 +9,7 @@ import rootReducer from './components/Redux/RootReducer'
 
 const store = createStore(rootReducer)
 
-console.log("store data",store)
+console.log("store data from index file",store)
 
 ReactDom.render(
 <Provider store={store}>

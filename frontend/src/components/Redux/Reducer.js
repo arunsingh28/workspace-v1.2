@@ -1,16 +1,17 @@
-import { Userr } from './Constant'
+import { ADD_USER } from './Constant'
 
 const intialState = {
     userData: []
 }
 
-export default User = (state = intialState, action) => {
+export default function User (state = [], action){
     switch (action.type) {
-        case Userr:
-            return {
+        case ADD_USER:
+            console.log('Reducer',action)
+            return [
                 ...StaticRange,
-                userData: action.data
-            }
+                {userData: action.data}
+            ]
             break;
         default:
             return state

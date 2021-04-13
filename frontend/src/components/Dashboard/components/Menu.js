@@ -15,9 +15,10 @@ const Menu = () => {
                     <ul>
                         <Link to="/home"><li style={{color:'rgb(24, 107, 202)',fontWeight:'900'}}><i className="fas fa-braille"  style={{color:'rgb(24, 107, 202)'}}></i>  Home</li></Link>
                         <Link to="/WS"><li><i className="fas fa-globe"></i>  Work</li></Link>
-                        <Link to="/storageWS"><li><i class="fas fa-hdd"></i>  Storage</li></Link>
-                        <Link to="/cloudWS"><li><i class="fab fa-mixcloud"></i>  Cloud</li></Link>
-                        <Link to="/cong"><li><i class="fas fa-cog"></i>  Setting</li></Link>
+                        <Link to="/storageWS"><li><i className="fas fa-hdd"></i>  Storage</li></Link>
+                        <Link to="/cloudWS"><li><i className="fab fa-mixcloud"></i>  Cloud</li></Link>
+                        <Link to="/music"><li><i className="fas fa-music"></i>  Music</li></Link>
+                        <Link to="/cong"><li><i className="fas fa-cog"></i>  Setting</li></Link>
                     </ul>
                 </div>
             </div>

@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({margin}) => {
     return (
-        <div className="footer-work">
+        <div className="footer-work" style={{'marginTop':margin}}>
            <div className="container-footer w-container">
   <div className="w-row">
     <div className="footer-column w-clearfix w-col w-col-4"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/596d33f36607b12cfdaf8ad2_LogoWhite.png" alt="" width="40" className="failory-logo-image"/>
-      <h3 className="footer-failory-name">Workspace</h3>
+      <Link to="/" ><h3 className="footer-failory-name">Workspace</h3></Link>
       <p className="footer-description-failory">Storing Multiple type Data.</p>
     </div>
     <div className="footer-column w-col w-col-8">
@@ -15,10 +16,10 @@ const Footer = () => {
           <div className="w-row">
             <div className="w-col w-col-7 w-col-small-6 w-col-tiny-7">
               <h3 className="footer-titles">Learn</h3>
-              <p className="footer-links"><a href="/" target="_blank"><span className="footer-link">Failed Startups</span></a><a href="/"><span className="footer-link">Successful Startups</span></a><a href="/"><span className="footer-link">Blog</span></a><span></span><a href="/"><span className="footer-link">Entrepreneurial Tools</span></a><a href="/"><span className="footer-link">Startup Cemetery</span></a><a href="/"><span className="footer-link">Podcast</span></a><strong></strong></p>
+              <p className="footer-links"><Link to="/about" ><span className="footer-link">About us</span></Link><a href="/"><span className="footer-link">Successful Startups</span></a><a href="/"><span className="footer-link">Blog</span></a><span></span><a href="/"><span className="footer-link">Entrepreneurial Tools</span></a><a href="/"><span className="footer-link">Startup Cemetery</span></a><a href="/"><span className="footer-link">Podcast</span></a><strong></strong></p>
             </div>
             <div className="w-col w-col-5 w-col-small-6 w-col-tiny-5">
-              <h3 className="footer-titles">Other</h3>
+              
               <p className="footer-links">
                   <a href="/"><span className="footer-link">Sponsor Us!</span></a><a href="/"><span className="footer-link">Open Startup</span></a><a href="/"><span className="footer-link"></span></a><a href="/"><span className="footer-link">Contribute</span></a><a href="/"><span className="footer-link">FAQ</span></a><strong></strong></p>
             </div>
