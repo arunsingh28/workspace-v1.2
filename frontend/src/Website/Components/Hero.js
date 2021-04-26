@@ -12,7 +12,8 @@ const Hero = () => {
  
             <div className="hero-content">
                 <p>Combine Your Data with our Cloud. </p>
-                <Link to="/signup"><button>Join</button></Link>
+                {/* <Link to="/signup"><button>Join</button></Link> */}
+                <a href="https://work-spacee.herokuapp.com/register"><button>Join</button></a>
             </div>
             <div className="hero-img">
                 <img src={img} height="300" alt="hero" />

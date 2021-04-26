@@ -71,7 +71,7 @@ const Website = () => {
         <MoreInfo/>
         <Contact/>
 
-        <Fileuploader/>
+
         <footer>
             <Footer/>
         </footer>
