@@ -47,15 +47,15 @@ const Website = () => {
             title={'Clouding'}
             desc={'Store personal Data'}
             />
-            <Card
+            {/* <Card
             img={idea}
             title={'Team'}
             desc={'Work with Team'}
-            />
+            /> */}
             <Card
             img={note}
             title={'Work'}
-            desc={'Combine work with workspace'}
+            desc={'Combine work with workspacee'}
             />
              <Card
             img={dashboard}

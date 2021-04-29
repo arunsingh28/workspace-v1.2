@@ -1757,7 +1757,7 @@ img {
 .card-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
+  -ms-grid-columns: auto auto auto;
   grid-template-columns: auto auto auto auto;
   -ms-flex-pack: distribute;
   justify-content: space-around;

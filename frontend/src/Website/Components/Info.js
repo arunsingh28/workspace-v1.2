@@ -11,6 +11,7 @@ const Info = () => {
                         <li>Node</li>
                         <li>React</li>
                         <li>MongoDB</li>
+                        <li>Bootstrap</li>
                     </ul>
                 </div>
                 <div className="indigoRight"></div>
